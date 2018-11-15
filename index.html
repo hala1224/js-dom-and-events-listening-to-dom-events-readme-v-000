@@ -77,7 +77,16 @@
                 divs[i].addEventListener('click', capture, true);
               }
               
-              
+              function bubbleStop(e) {
+              // stop! that! propagation!
+              e.stopPropagation();
+             
+              console.log(this.firstChild.nodeValue.trim() + ' bubbled');
+            }
+             
+            for (let i = 0; i < divs.length; i++) {
+              divs[i].addEventListener('click', bubbleStop);
+            }
     </script>
   </body>
   
