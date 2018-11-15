@@ -23,3 +23,9 @@ input.addEventListener('keydown', function(e) {
 //     console.log('Not a "g"');
 //   }
 // });
+let divs = document.querySelectorAll('div');
+ 
+function bubble(e) {
+ 
+  console.log(this.firstChild.nodeValue.trim() + ' bubbled');
+}
