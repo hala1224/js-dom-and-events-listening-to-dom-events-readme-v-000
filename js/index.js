@@ -13,7 +13,7 @@ const input = document.querySelector('input');
 input.addEventListener('keydown', function(e) {
   console.log(e.which);
 });
-const input = document.querySelector('input');
+// const input = document.querySelector('input');
  
 // input.addEventListener('keydown', function(e) {
 //   if (e.which === 71) {
